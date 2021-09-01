@@ -30,3 +30,8 @@ class MajorityElementTest < Minitest::Test
         assert_equal 5, majority_element([4,5,4,5,4,5,5,5])
     end    
 end    
+
+
+#sort 
+#ブロックの最後に評価される値が整数を返してあげれば並び替えてくれるわけです。
+#<=>メソッドは何らかの比較をして1, -1, 0, nilのいずれかを返すように実装されているので、それを使えば簡単に並び替えできる、というわけです
