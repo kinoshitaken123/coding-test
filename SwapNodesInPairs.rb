@@ -29,7 +29,7 @@ class ListNode
       temp1 = node.next #1
       temp2 = node.next.next #2
       temp3 = node.next.next.next #3
-      temp1.next = temp3
+      temp1.next = temp3 #3
       temp2.next = temp1
       node.next = temp2
       node = temp1
