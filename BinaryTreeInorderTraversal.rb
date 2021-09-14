@@ -9,10 +9,6 @@ class TreeNode
 end
 
 n1 = TreeNode.new(1)
-# n2 = TreeNode.new(2)
-# n3 = TreeNode.new(3)
-# n1.left = n2
-# n2.left = n3
 
 def inorder_traversal(root)
   result = []
