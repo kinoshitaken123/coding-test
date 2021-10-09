@@ -30,3 +30,23 @@ SELECT *
 FROM purchases
 WHERE character_name = "にんじゃわんこ"
 ORDER BY price ASC;
+
+LIMIT
+「最大で何件取得するか」を指定するためには、「制限する」という意味の「LIMIT」を用います。
+
+SELECT * FROM purchases LIMIT 5;
+
+また、「LIMIT」も「ORDER BY」と同様に「WHERE」と併用することが可能です。
+
+SELECT * FROM purchases 
+WHERE 条件
+LIMIT 5;
+
+ORDER BYとLIMITの組み合わせ
+「ORDER BY」と「LIMIT」を併用することも可能です。その場合、「LIMIT」を末尾にする必要があります。
+このように２つを用いることで、priceが高いデータの上位５位を取得することができます。
+
+SELECT * 
+FROM purchases
+ORDER BY price DESC
+LIMIT 5;
