@@ -84,3 +84,12 @@ GROUP BY purchased_at,character_name;
 
 --集計関数により、各グループごとにデータを集計することができます。
 --それぞれグループ化したデータに対してSUM関数とCOUNT関数を用いたものとなっています。
+
+--WHEREとGROUP BY
+--GROUP BYはWHEREとも併用することができ、その場合はWHEREの後に書きます。
+--WHEREとGROUP BYと集計関数は以下の順番で実行されていきます。
+
+SELECT SUM(price),purchased_at,character_name
+FROM purchases
+WHERE category = "食費";
+GROUP BY purchased_at,character_name;
