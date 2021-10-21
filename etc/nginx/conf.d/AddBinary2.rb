@@ -8,3 +8,5 @@ def add_binary(a, b)
   end
   
   puts add_binary("1010","1011")
+
+  <
